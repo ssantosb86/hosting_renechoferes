@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // Detecta si es Android o iOS y redirige
+        if (/Android/i.test(navigator.userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.rene.driver";
+        } else if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            window.location.href = "https://apps.apple.com/us/app/rene-choferes/id1639741341";
+        } else {
+            // Si no es móvil, redirige a una web por defecto
+            window.location.href = "https://renetaxis.com/";
+        }
+    </script>
+</head>
+<body>
+    <p>Renetaxis. Redirigiendo a la tienda de aplicaciones...</p>
+</body>
+</html>
